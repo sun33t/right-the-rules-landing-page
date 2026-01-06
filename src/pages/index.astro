@@ -28,11 +28,12 @@ import "@fontsource/open-sans/800.css";
     <main>
       <!-- Coming Soon Stamp -->
       <div class="stamp-container">
-        <img
-          src="https://freesvg.org/img/Red-Coming-Soon-Stamp.png"
-          alt="Coming Soon"
-          class="stamp"
-        />
+        <svg class="stamp" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="192" height="72" rx="8" ry="8" fill="none" stroke="white" stroke-width="4"/>
+          <rect x="12" y="12" width="176" height="56" rx="4" ry="4" fill="none" stroke="white" stroke-width="2"/>
+          <text x="100" y="38" text-anchor="middle" fill="white" font-family="'Open Sans', sans-serif" font-weight="800" font-size="22">COMING</text>
+          <text x="100" y="60" text-anchor="middle" fill="white" font-family="'Open Sans', sans-serif" font-weight="800" font-size="22">SOON!</text>
+        </svg>
       </div>
 
       <!-- Title -->
@@ -186,7 +187,7 @@ import "@fontsource/open-sans/800.css";
   .stamp {
     height: 7rem;
     width: auto;
-    filter: brightness(0) invert(1) drop-shadow(0 4px 20px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.3));
     animation: wobble 3s ease-in-out infinite;
     transform-origin: center center;
   }
