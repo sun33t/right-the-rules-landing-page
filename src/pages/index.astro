@@ -8,7 +8,6 @@ import "@fontsource/open-sans/800.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✍️</text></svg>"
@@ -17,67 +16,349 @@ import "@fontsource/open-sans/800.css";
     <meta name="generator" content={Astro.generator} />
     <title>Right the Rules</title>
   </head>
-  <body
-    class="min-h-screen flex flex-col items-center bg-[#e28c99] border-8 border-sol border-white text-white font-sans py-12 px-12"
-  >
-    <!-- Stamp - pushed to top area -->
-    <div class="mb-auto flex justify-center">
-      <img
-        src="https://freesvg.org/img/Red-Coming-Soon-Stamp.png"
-        alt="Coming Soon"
-        class="h-[clamp(6rem,_15vw,_12rem)] w-auto brightness-0 invert"
-      />
-    </div>
+  <body>
+    <!-- Animated background blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
 
-    <!-- Main content - vertically centered -->
-    <div class="my-auto">
-      <h1
-        class="text-white font-normal text-[clamp(1.5rem,_5vw,_5vw)] text-center"
-      >
-        <span class="font-semibold">Right</span>
-        <span class="font-light">the</span>
-        <span class="font-semibold">Rules</span>
-      </h1>
-      <div class="my-8 mx-auto py-0 px-4">
-        <h2 class="font-light text-center text-[clamp(1rem,_2vw,_2vw)]">
-          Helping you{" "}
-          <span>
-            do <span class="underline">compliance</span>, <span
-              class="underline">change</span
-            > and <span class="underline">culture</span> with people in mind.</span
-          >
-        </h2>
+    <!-- Main content -->
+    <main>
+      <!-- Coming Soon Stamp -->
+      <div class="stamp-container">
+        <img
+          src="https://freesvg.org/img/Red-Coming-Soon-Stamp.png"
+          alt="Coming Soon"
+          class="stamp"
+        />
       </div>
-    </div>
 
-    <!-- Social links - pushed to bottom area -->
-    <div class="mt-auto flex items-center justify-center gap-4">
-        <a href="https://www.linkedin.com/in/satvinder-misra/" title="LinkedIn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-[clamp(2.5rem,_5vw,_5vw)] w-[clamp(2.5rem,_5vw,_5vw)]"
-            viewBox="0 0 1536 1536"
-            ><path
+      <!-- Title -->
+      <h1 class="title">
+        <span class="title-word">Right</span>
+        <span class="title-word light">the</span>
+        <span class="title-word">Rules</span>
+      </h1>
+
+      <!-- Tagline -->
+      <p class="tagline">
+        Helping you do
+        <span class="highlight">compliance</span>,
+        <span class="highlight">change</span>
+        and <span class="highlight">culture</span>
+        with people in mind.
+      </p>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/satvinder-misra/"
+          title="LinkedIn"
+          class="social-icon"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1536">
+            <path
               fill="currentColor"
               d="M237 1286h231V592H237v694zm246-908q-1-52-36-86t-93-34t-94.5 34t-36.5 86q0 51 35.5 85.5T351 498h1q59 0 95-34.5t36-85.5zm585 908h231V888q0-154-73-233t-193-79q-136 0-209 117h2V592H595q3 66 0 694h231V898q0-38 7-56q15-35 45-59.5t74-24.5q116 0 116 157v371zm468-998v960q0 119-84.5 203.5T1248 1536H288q-119 0-203.5-84.5T0 1248V288Q0 169 84.5 84.5T288 0h960q119 0 203.5 84.5T1536 288z"
-            ></path></svg
-          >
+            ></path>
+          </svg>
         </a>
         <a
           href="mailto:satty@righttherules.com?Subject=Website%20Query"
-          title="email"
-          class="text-sm"
+          title="Email"
+          class="social-icon"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-[clamp(2.5rem,_5vw,_5vw)] w-[clamp(2.5rem,_5vw,_5vw)]"
-            viewBox="0 0 1536 1536"
-            ><path
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1536">
+            <path
               fill="currentColor"
               d="M1248 0q119 0 203.5 84.5T1536 288v960q0 119-84.5 203.5T1248 1536H288q-119 0-203.5-84.5T0 1248V288Q0 169 84.5 84.5T288 0h960zm32 1056V620q-31 35-64 55q-34 22-132.5 85T932 859q-98 69-164 69t-164-69q-47-32-142-92.5T320 674q-12-8-33-27t-31-27v436q0 40 28 68t68 28h832q40 0 68-28t28-68zm0-573q0-41-27.5-70t-68.5-29H352q-40 0-68 28t-28 68q0 37 30.5 76.5T354 621q47 32 137.5 89T621 793q3 2 17 11.5t21 14t21 13t23.5 13T725 854t22.5 7.5T768 864t20.5-2.5T811 854t21.5-9.5t23.5-13t21-13t21-14t17-11.5l267-174q35-23 66.5-62.5T1280 483z"
-            ></path></svg
-          >
+            ></path>
+          </svg>
         </a>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
+
+<style>
+  /* Base styles */
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(135deg, #e28c99 0%, #f0a5a5 50%, #fcd5ce 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Animated background blobs */
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.6;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .blob-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #ff9a9e 0%, #fecfef 100%);
+    top: -100px;
+    left: -100px;
+    animation-delay: 0s;
+  }
+
+  .blob-2 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(180deg, #ffecd2 0%, #fcb69f 100%);
+    bottom: -80px;
+    right: -80px;
+    animation-delay: -7s;
+    animation-duration: 25s;
+  }
+
+  .blob-3 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, #a18cd1 0%, #fbc2eb 100%);
+    top: 50%;
+    right: 10%;
+    animation-delay: -14s;
+    animation-duration: 18s;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    25% {
+      transform: translate(30px, -30px) scale(1.05);
+    }
+    50% {
+      transform: translate(-20px, 20px) scale(0.95);
+    }
+    75% {
+      transform: translate(20px, 30px) scale(1.02);
+    }
+  }
+
+  /* Main content container */
+  main {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  /* Stamp styles */
+  .stamp-container {
+    margin-bottom: 2rem;
+    animation: fadeInDown 0.8s ease-out forwards;
+    display: flex;
+    justify-content: center;
+  }
+
+  .stamp {
+    height: 7rem;
+    width: auto;
+    filter: brightness(0) invert(1) drop-shadow(0 4px 20px rgba(255, 255, 255, 0.3));
+    animation: wobble 3s ease-in-out infinite;
+    transform-origin: center center;
+  }
+
+  @keyframes wobble {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Title styles */
+  .title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  @media (min-width: 640px) {
+    .title {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      font-size: 4rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .title {
+      font-size: 5rem;
+    }
+  }
+
+  .title-word {
+    display: inline-block;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f5 50%, #ffe4e6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    filter: drop-shadow(0 2px 10px rgba(255, 255, 255, 0.3));
+  }
+
+  .title-word.light {
+    font-weight: 300;
+    margin: 0 0.3em;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Tagline styles */
+  .tagline {
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    margin: 0 0 2.5rem 0;
+    line-height: 1.6;
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 640px) {
+    .tagline {
+      font-size: 1.125rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .tagline {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .tagline {
+      font-size: 1.5rem;
+    }
+  }
+
+  .highlight {
+    position: relative;
+    font-weight: 400;
+  }
+
+  .highlight::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    transform: scaleX(0);
+    animation: underlineGrow 0.6s ease-out forwards;
+    animation-delay: 1s;
+  }
+
+  .highlight:nth-of-type(2)::after {
+    animation-delay: 1.2s;
+  }
+
+  .highlight:nth-of-type(3)::after {
+    animation-delay: 1.4s;
+  }
+
+  @keyframes underlineGrow {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  /* Social links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .social-icon svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.15) translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15),
+      0 0 40px rgba(255, 255, 255, 0.2);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .blob-1 {
+      width: 250px;
+      height: 250px;
+    }
+    .blob-2 {
+      width: 200px;
+      height: 200px;
+    }
+    .blob-3 {
+      width: 150px;
+      height: 150px;
+    }
+  }
+</style>
