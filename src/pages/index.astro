@@ -18,9 +18,19 @@ import "@fontsource/open-sans/800.css";
     <title>Right the Rules</title>
   </head>
   <body
-    class="min-h-screen flex justify-center items-center bg-[#e28c99] border-8 border-sol border-white text-white font-sans"
+    class="min-h-screen flex flex-col items-center bg-[#e28c99] border-8 border-sol border-white text-white font-sans py-12 px-12"
   >
-    <div class="px-12">
+    <!-- Stamp - pushed to top area -->
+    <div class="mb-auto flex justify-center">
+      <img
+        src="https://freesvg.org/img/Red-Coming-Soon-Stamp.png"
+        alt="Coming Soon"
+        class="h-[clamp(6rem,_15vw,_12rem)] w-auto brightness-0 invert"
+      />
+    </div>
+
+    <!-- Main content - vertically centered -->
+    <div class="my-auto">
       <h1
         class="text-white font-normal text-[clamp(1.5rem,_5vw,_5vw)] text-center"
       >
@@ -38,7 +48,10 @@ import "@fontsource/open-sans/800.css";
           >
         </h2>
       </div>
-      <div class="flex items-center justify-center gap-4">
+    </div>
+
+    <!-- Social links - pushed to bottom area -->
+    <div class="mt-auto flex items-center justify-center gap-4">
         <a href="https://www.linkedin.com/in/satvinder-misra/" title="LinkedIn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +78,6 @@ import "@fontsource/open-sans/800.css";
             ></path></svg
           >
         </a>
-      </div>
     </div>
   </body>
 </html>
